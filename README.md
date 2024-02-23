@@ -6,6 +6,7 @@
 -   [Tools and technologies](#Technologies)
 -   [Features](#Features)
     -   [Homepage](#Homepage)
+    -   [Recipe Page](#Recipe)
 -   [Authors / Contributors](#Authors)
 
 ## Inspiration
@@ -15,5 +16,7 @@
 ## Features
 
 ### Homepage
+
+### Recipe
 
 ## Authors
