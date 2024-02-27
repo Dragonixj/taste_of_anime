@@ -1,0 +1,74 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Dragon Roll",
+            "ingredients": ["Sushi Rice", "Nori", "Eel", "Avocado", "Cucumber", "Soy Sauce"],
+            "image": "https://example.com/dragon-roll.jpg",
+            "instructions": "Dragon Roll is a popular sushi roll that combines the savory taste of eel with the creamy texture of avocado. Here's how you can make it:\n\n1. Prepare sushi rice according to package instructions.\n\n2. Lay a sheet of nori on a bamboo sushi rolling mat.\n\n3. Wet your hands and spread a thin layer of sushi rice on the nori, leaving a small border at the top.\n\n4. Place thin slices of eel, avocado strips, and cucumber along the bottom edge of the rice.\n\n5. Roll the sushi tightly from the bottom using the bamboo mat as a guide.\n\n6. Seal the edge with a bit of water.\n\n7. Slice the roll into bite-sized pieces using a sharp knife.\n\n8. Serve the Dragon Roll with soy sauce on the side.\n\nEnjoy your delicious Dragon Roll!"
+        },
+        {
+            "id": 2,
+            "title": "Onigiri",
+            "ingredients": ["Short Grain Rice", "Nori", "Filling of your choice (e.g., salmon, pickled plum)"],
+            "image": "https://example.com/onigiri.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 3,
+            "title": "Miso Soup",
+            "ingredients": ["Miso Paste", "Tofu", "Seaweed", "Green Onions", "Dashi"],
+            "image": "https://example.com/miso-soup.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 4,
+            "title": "Ramen Bowl",
+            "ingredients": ["Ramen Noodles", "Broth", "Soy Sauce", "Sesame Oil", "Soft-Boiled Egg", "Bok Choy", "Chashu Pork"],
+            "image": "https://example.com/ramen.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 5,
+            "title": "Tempura Vegetables",
+            "ingredients": ["Tempura Batter", "Assorted Vegetables (e.g., sweet potato, zucchini)"],
+            "image": "https://example.com/tempura.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 6,
+            "title": "Sakura Mochi",
+            "ingredients": ["Sweet Rice Flour", "Red Bean Paste", "Salted Cherry Blossom Leaves"],
+            "image": "https://example.com/sakura-mochi.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 7,
+            "title": "Matcha Latte",
+            "ingredients": ["Matcha Powder", "Milk", "Sweetener of your choice"],
+            "image": "https://example.com/matcha-latte.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 8,
+            "title": "Yakitori",
+            "ingredients": ["Chicken Skewers", "Soy Sauce", "Sake", "Mirin", "Sugar"],
+            "image": "https://example.com/yakitori.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 9,
+            "title": "Soba Noodle Salad",
+            "ingredients": ["Soba Noodles", "Soy Sauce", "Rice Vinegar", "Sesame Oil", "Vegetables"],
+            "image": "https://example.com/soba-salad.jpg",
+            "instructions": "..."
+        },
+        {
+            "id": 10,
+            "title": "Okonomiyaki",
+            "ingredients": ["Cabbage", "Flour", "Eggs", "Bacon or Pork Belly", "Okonomiyaki Sauce"],
+            "image": "https://example.com/okonomiyaki.jpg",
+            "instructions": "..."
+        }
+    ]
+}
