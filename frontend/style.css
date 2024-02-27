@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    padding: 0;
+    background-image: url("image-back/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+.image{
+    margin: 0px;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    background-color: hwb(160 2% 64%);
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.sub-nav-1{
+    display: none;
+}
+
+.active, .navbar ul li:hover{
+    background: hsl(120, 61%, 14%);
+    border-radius: 3px;
+}
+
+.navbar ul li:hover .sub-nav-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navbar ul li:hover .sub-nav-1 ul{
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-nav-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.navbar ul li:hover .sub-nav-1 ul li:last-child{
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-nav-1 ul li a:hover{
+    color: #00ff8c;
+}
+
+.fa-angle-right{
+    float:right;
+}
+.navbar .fa{
+    margin-right: 8px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsl(0, 1%, 15%);
+}
+.navbar li{
+    float: left;
+}
+.sub-nav-2{
+    display: none;
+}
+
+.hover-me:hover .sub-nav-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(0,100,0);
+}
