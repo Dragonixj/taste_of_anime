@@ -1,0 +1,38 @@
+.
+├── backend
+│   ├── app
+│   │   ├── auth
+│   │   │   └── auth_routes.py
+│   │   ├── config.py
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   └── recipes
+│   │       └── recipe_route.py
+│   ├── recipes.json
+│   └── requirements.txt
+├── client
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── components
+│       │   ├── Auth
+│       │   │   ├── Login.js
+│       │   │   └── Signup.js
+│       │   ├── Home.js
+│       │   ├── Likes.js
+│       │   ├── NavBar.js
+│       │   ├── Recipe.js
+│       │   ├── Spotlight.js
+│       │   ├── styles
+│       │   └── UserPage.js
+│       ├── firebaseConfig.js
+│       ├── index.js
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+├── folder_structure.txt
+└──README.md
+

@@ -1,14 +1,32 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import { useState } from 'react';
-import firebaseConfig from '../../../../firebase/firebaseConfig';
+import React, { useState } from 'react';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
-firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState(null);
+
+    const handleLogin = async () => {
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            console.log('User logged in successfully!');
+        } catch (error) {
+            console.error('Error logging in:', error.message);
+        }
+    };
+
+    return (
+        <div>
+            <h2>Login</h2>
+            <label>Email:</label>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <label>Password:</label>
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <button onClick={handleLogin}></button>
+        </div>
+    );
 };
 
 export default Login;
