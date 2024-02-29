@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import initilizeApp from 'firebase/compat/app';
 import reportWebVitals from './reportWebVitals';
-import firebaseConfig from './firebaseConfig';
-
-initilizeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
