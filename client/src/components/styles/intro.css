@@ -1,11 +1,12 @@
 #intro {
     display: flex;
+    color: white;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: auto;
-    max-width: 1000px;
     padding-top: 200px;
     min-height: 100vh;
     font-size: 35px;
+    background-color: #0a192f;
 }

@@ -1,6 +1,6 @@
 const Spotlight = () => {
     return (
-        <div>
+        <div id="spotlight">
             Spotlight Recipes
         </div>
     )
