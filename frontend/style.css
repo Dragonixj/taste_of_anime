@@ -140,7 +140,7 @@ h1{
 }
 
 /* style for container*/
-.container{
+/*.container{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -152,7 +152,7 @@ h1{
     background-position: center;
     border-radius: 10px;
     margin-top: 20px;
-}
+}*/
 /*.header {
     position: fixed;
     top: 0;
@@ -166,7 +166,7 @@ h1{
     z-index: 100;
 }*/
 
-.search-bar{
+/*.search-bar{
     width: 200px;
     height: 45px;
     background: transparent;
@@ -205,7 +205,7 @@ h1{
 .search-bar button i{
     font-size: 22px;
     color: #e4e4e4;
-}
+}*/
 
 .container .content{
     width: 58%;
@@ -258,7 +258,7 @@ h1{
     transform: scale(1.2);
 }
 
-.logreg-box .form-box{
+/*.logreg-box .form-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,4 +317,4 @@ h1{
     top: 13px;
     right: 0;
     font-size: 19px;
-}
+}*/
