@@ -1,9 +1,8 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import './styles/navbar.css'
-
+import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import './styles/navbar.css';
 
 const NavBar = () => {
     return (
@@ -19,9 +18,8 @@ const NavBar = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-
-        </Navbar >
-    )
-}
+        </Navbar>
+    );
+};
 
 export default NavBar;
