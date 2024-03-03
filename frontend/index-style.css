@@ -1,0 +1,298 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(appetizer-recipe/Paleo\ Tailgating\ Recipes.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+nav
+{
+    flex: 1;
+    /*text-align: left;*/
+    float: left;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-left: 70px;
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-family: Century;
+    display: block;
+    text-align: center;
+    padding: 14px 1px;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: century;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+/* block for login*/
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+    font-family: century;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+
+/* block for social icons*/
+
+/*.social-icons a i{
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.2);
+}*/
+
+/* sub-nab styles*/
+
+/*.sub-nav{
+    display: none;
+}*/
+
+/* active status on Home*/
+
+.active, nav ul li:hover{
+    background: hsl(120, 61%, 14%);
+    border-radius: 3px;
+}
+
+/* styling the fa, sub-nav*/
+/*nav ul li:hover .sub-nav{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-nav ul{
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-nav ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+nav ul li:hover .sub-nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li:hover .sub-nav ul li a:hover{
+    color: #00ff8c;
+}*/
+
+.fa-angle-right{
+    float:right;
+}
+nav .fa{
+    margin-right: 8px;
+}
+
+/* styling of the anime recipe title watch video, more*/
+
+.title{
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50% -50%);
+}
+
+.title h1{
+    color: #340f0f;
+    font-size: 50px;
+}
+
+.button{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50% -50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*content logo*/
+.content .logo{
+    font-size: 30px;
+}
