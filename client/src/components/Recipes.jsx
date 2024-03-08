@@ -3,24 +3,24 @@ import { styled } from 'styled-components';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 
-function Spotlight() {
-    const [popular, setPopular] = useState([]);
+function Recipes() {
+    const [italian, setItalian] = useState([]);
 
     useEffect(() => {
-        getPopular();
+        getItalian();
     }, []);
 
-    const getPopular = async () => {
-        const check = localStorage.getItem('popular');
+    const getItalian = async () => {
+        const check = localStorage.getItem('italian');
 
         if (check) {
-            setPopular(JSON.parse(check));
+            setItalian(JSON.parse(check));
         } else {
-            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10`);
+            const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=10&tags=italian`);
             const data = await api.json();
 
-            localStorage.setItem('popular', JSON.stringify(data.recipes));
-            setPopular(data.recipes);
+            localStorage.setItem('italian', JSON.stringify(data.recipes));
+            setItalian(data.recipes);
             console.log(data.recipes);
         }
     };
@@ -28,14 +28,14 @@ function Spotlight() {
     return (
         <div id="spotlight">
             <Wrapper>
-                <h3>Spotlight Recipes</h3>
+                <h3>Random Recipes</h3>
                 <Splide
                     options={{
-                        perPage: 4,
+                        perPage: 3,
                         gap: '5rem',
                     }}
                 >
-                    {popular.map((recipe) => {
+                    {italian.map((recipe) => {
                         return (
                             <SplideSlide key={recipe.id}>
                                 <Card>
@@ -96,4 +96,4 @@ const Gradient = styled.div`
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 `;
 
-export default Spotlight;
+export default Recipes;

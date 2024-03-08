@@ -20,3 +20,8 @@
 ### Recipe
 
 ## Authors
+
+| Author         | Github                               |
+| -------------- | ------------------------------------ |
+| Elvis Fiador   | [link](https://github.com/Dragonixj) |
+| Nourister Juma | [link](google.com)                   |
