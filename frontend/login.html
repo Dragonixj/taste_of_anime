@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="login-style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
 </head>
 <body>
     <div class="full-page">
@@ -34,13 +33,6 @@
         </div>
     </div>
     <section>
-        <div class="container">
-            <div id="home" class="slides slide1" class="cards">
-                
-                <!--<video autoplay loop muted plays-inline class="back-video">
-                    <source src="Anime-logo/video/video1.mp4 (1080p).mp4" type="video/mp4">
-                </video>-->
-
                 <div id='login-form'class='login-page'>
                     <div class="form-box">
                         <div class='button-box'>
@@ -49,18 +41,30 @@
                             <button type='button'onclick='register()'class='toggle-btn'>Register</button>
                         </div>
                         <form id='login' class='input-group-login'>
-                            <input type='text'class='input-field'placeholder='Email Id' required >
-                    <input type='password'class='input-field'placeholder='Enter Password' required>
-                    <input type='checkbox'class='check-box'><span>Remember Password</span>
-                    <button type='submit'class='submit-btn'>Log in</button>
+                            <label id="emailId"></label>
+                    <input type='text' class='input-field' placeholder='Email Id'required>
+                    <label id="enterPassword"></label>
+                    <input type='password' class='input-field' placeholder='Enter Password'required>
+                    <label>
+                    <input type='checkbox'class='check-box' id="rememberPassword">
+                    <span>Remember Password</span>
+                    </label>
+                    <button type='submit'class='submit-btn' onclick="auth()">Log in</button>
                  </form>
                  <form id='register' class='input-group-register'>
+                    <label id="userName"></label>
                      <input type='text'class='input-field'placeholder='First Name' required>
+                     <label id="userLastName"></label>
                      <input type='text'class='input-field'placeholder='Last Name ' required>
+                     <label id="userId"></label>
                      <input type='email'class='input-field'placeholder='Email Id' required>
+                     <label id="userPassword"></label>
                      <input type='password'class='input-field'placeholder='Enter Password' required>
+                     <label id="userConfirmPassword"></label>
                      <input type='password'class='input-field'placeholder='Confirm Password'  required>
-                     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                     <label>
+                     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                     </label>
                             <button type='submit'class='submit-btn'>Register</button>
                      </form>
                     </div>
@@ -94,26 +98,20 @@
             }
         }
     </script>
+    <script>
 
-<!--<script>
-    let section = document.querySelectorAll('section');
-    let navlinks = document.querySelectorAll('navbar a');
+        function auth(){
+            var email = document.getElementById("emailId").value;
+            var pass = document.getElementById("enterPassword").value;
+        if (email == 'admin@gmail.com' && pass == 'admin123'){
+            alert("You've successfully loged in! ")
+            window.location.assign("main-index.html");
+        }
+        else{
+            alert("Sorry! invalid credentials ")
+        }
+        }
 
-    window.onscroll = () =>{
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-
-            if(top >= offset && top < offset + height) {
-                navlinks.forEach(Links => {
-                    Links.classList.remove('active');
-                    document.querySelector('navbar a[href*=' + id +']').classList.add('active');
-                })
-            }
-        })
-    }
-</script>-->
+    </script>
 </body>
 </html>

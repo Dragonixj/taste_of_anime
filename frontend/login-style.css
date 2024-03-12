@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400,500;600;700;800;900&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400,500;600;700;800;900&display=swap');*/
 *
 {
     margin: 0;
@@ -9,13 +8,13 @@
     scroll-behavior: smooth;
 }
 
-body{
-    /*display: flex;*/
+/*body{
+    display: flex;
     align-items: center;
     justify-content: center;
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     background: #F1F4FD;
-}
+}*/
 /*section srtyling*/
 
 section{
@@ -168,7 +167,7 @@ a
 	width:220px;
 	margin:35px auto;
 	position:relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
+	box-shadow: 0 0 20px 9px #4321131f;
 	border-radius: 30px;
 }
 .toggle-btn
@@ -187,7 +186,7 @@ a
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: #F3C693;
+	background: #ea9c44;
 	border-radius: 30px;
 	transition: .5s;
 }
@@ -213,7 +212,7 @@ a
 	border-left:0;
 	border-top:0;
 	border-right:0;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #ece9e9;
 	outline:none;
 	background: transparent;
 }
@@ -235,9 +234,9 @@ a
 }
 span
 {
-	color:#777;
-	font-size:12px;
-	bottom:68px;
+	color:#efeaea;
+	font-size:14px;
+	bottom:85px;
 	position:absolute;
 }
 #login
@@ -284,18 +283,18 @@ nav .fa{
 .back-video{
     position: absolute;
     right: 0;
-    bottom: 100;
+    bottom: 0;
     z-index: 0;
 }
 
-@media (min-aspect-ratio: 16/10){
+@media (min-aspect-ratio: 16/9){
     .back-video{
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/10){
+@media (max-aspect-ratio: 16/9){
     .back-video{
         width: auto;
         height: 100%;
