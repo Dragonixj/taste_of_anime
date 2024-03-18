@@ -23,6 +23,10 @@ const DetailWrapper = styled.div`
     margin-top: 10rem;
     margin-top: 5rem;
     display: flex;
+    .active {
+        background: linear-gradient(35deg, #494949, #313131);
+        color: white;
+    }
     h2 {
         margin-bottom: 2rem;
     }
