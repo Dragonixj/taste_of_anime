@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/taste_of_anime/static/css/main.73a0680f.css",
-    "main.js": "/taste_of_anime/static/js/main.96d91b66.js",
+    "main.css": "/taste_of_anime/static/css/main.afb1b73a.css",
+    "main.js": "/taste_of_anime/static/js/main.87f8bd27.js",
     "static/js/453.419a5d54.chunk.js": "/taste_of_anime/static/js/453.419a5d54.chunk.js",
     "index.html": "/taste_of_anime/index.html",
-    "main.73a0680f.css.map": "/taste_of_anime/static/css/main.73a0680f.css.map",
-    "main.96d91b66.js.map": "/taste_of_anime/static/js/main.96d91b66.js.map",
+    "main.afb1b73a.css.map": "/taste_of_anime/static/css/main.afb1b73a.css.map",
+    "main.87f8bd27.js.map": "/taste_of_anime/static/js/main.87f8bd27.js.map",
     "453.419a5d54.chunk.js.map": "/taste_of_anime/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73a0680f.css",
-    "static/js/main.96d91b66.js"
+    "static/css/main.afb1b73a.css",
+    "static/js/main.87f8bd27.js"
   ]
 }
