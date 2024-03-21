@@ -10,7 +10,7 @@ import { GiKnifeFork } from 'react-icons/gi';
 function App() {
     return (
         <div className="App">
-            <BrowserRouter basename="/">
+            <BrowserRouter basename="/taste_of_anime">
                 <Nav>
                     <GiKnifeFork />
                     <Logo to={'/'}>TOA</Logo>
