@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { Link, useParams } from 'react-router-dom';
 
-function Searched() {
-    const [searchedRecipes, setSearchedRecipes] = useState([]);
-    const parmas = useParams();
+function Cuisines() {
+    const [cuisines, setCuisines] = useState([]);
+    const params = useParams();
 
-    const getSearchedRecipes = async (search) => {
-        const resp = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${search}`);
+    const getCuisines = async (name) => {
+        const resp = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`);
         const data = await resp.json();
 
         return data.results;
@@ -15,17 +16,17 @@ function Searched() {
 
     useEffect(() => {
         let isMounted = true;
-        getSearchedRecipes(parmas.search).then((data) => {
-            if (isMounted) setSearchedRecipes(data);
+        getCuisines(params.type).then((data) => {
+            if (isMounted) setCuisines(data);
         });
-
         return () => {
             isMounted = false;
         };
-    }, [parmas.search]);
+    }, [params.type]);
+
     return (
-        <Grid>
-            {searchedRecipes.map(({ title, id, image }) => (
+        <Grid animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+            {cuisines.map(({ id, title, image }) => (
                 <Card key={id}>
                     <Link to={`/recipe/${id}`}>
                         <img src={image} alt={title} />
@@ -37,7 +38,7 @@ function Searched() {
     );
 }
 
-const Grid = styled.div`
+const Grid = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     text-align: center;
@@ -46,7 +47,7 @@ const Grid = styled.div`
 
 const Card = styled.div`
     img {
-        width: min(500px, 100%);
+        width: min(400px, 100%);
         border-radius: 2rem;
     }
     a {
@@ -58,4 +59,4 @@ const Card = styled.div`
     }
 `;
 
-export default Searched;
+export default Cuisines;

@@ -1,13 +1,13 @@
-import React from 'react';
-import Recipes from '../Recipes';
-import Spotlight from '../Spotlight';
+import Random from '../Random';
+import Veggie from '../Veggie';
+import { motion } from 'framer-motion';
 
 function Home() {
     return (
-        <div>
-            <Recipes />
-            <Spotlight />
-        </div>
+        <motion.div>
+            <Random />
+            <Veggie />
+        </motion.div>
     );
 }
 
